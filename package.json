@@ -1,6 +1,6 @@
 {
   "name": "cjwest13-github-page",
-  "homepage": "https://cjwest13.github.io",
+  "homepage": "https://cliftonwestjr.com",
   "version": "0.1.0",
   "author": "Clifton West",
   "description": "My GitHub Website",
@@ -36,7 +36,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
