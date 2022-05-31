@@ -1,25 +1,27 @@
 import React from 'react';
-import logo from '../logo.svg';
 import '../styles/App.css';
-import Header from './header/Header';
-import Intro from './introduction/Intro';
-import Nav from './nav/Nav';
-import Twitter from './twitter/Twitter';
-// import "aos/dist/aos.css"
-import PressPreview from './press/PressPreview';
+import Sidebar from './sidebar/Sidebar';
+import Introduction from './introduction/Introduction';
+import About from './about/About';
+import Skills from './skills/Skills';
+import Resume from './resume/Resume';
+import Current from './ current/Current';
 
 function App() {
   return (
-    <main>
-      <Nav />
-      {/* <Header /> */}
-      <div className="content">
-        <Intro />
-        <Twitter />
-        <PressPreview />
+    <div id="colorlib-page">
+      <div id="container-wrap">
+        <Sidebar />
+        <div id="colorlib-main">
+          <Introduction />
+          <About />
+          <Skills />
+          <Resume />
+          <Current />
+        </div>
       </div>
-    </main>
-  );
+    </div>
+  )
 }
 
 export default App;
